@@ -1,0 +1,86 @@
+:root{
+  --mainDark: #000000;
+  --mainWhite: #ffffff;
+  --mainBlue: #534666;
+  --mainPink: #CD7672;
+  --lightGrey: #f2f2f2;
+  --darkGrey: #262626;
+  --mainButton: linear-gradient(#534666, #CD7672);
+}
+
+
+
+.App {
+  text-align: center;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blog{
+  font-family: sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+.blog-img{
+  opacity: 1;
+  display: block;
+
+}
+.blog-hover{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  color: white;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.overlay{
+  opacity: 0;
+}
+.blog:hover .blog-img{
+  filter:blur(2px) brightness(60%);
+  transition: 0.3s;
+}
+.blog:hover .overlay{
+  opacity: 1;
+}
+@media(max-width:768px)
+{
+  .blog-hover{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    color: white;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+}
+.nonav-dark{
+  background-color: var(--mainDark)!important;
+  color:var(--mainWhite);
+}
+.nonav-light{
+  background-color: var(--mainWhite)!important;
+}
+.nav-logo{
+  width:5.5vw;
+  height: auto;
+}
+@media(max-width:768px){
+  .nav-logo{
+    width: 25vw;
+    height: auto;
+  }
+}
+.themeDark{
+  background-color: var(--mainDark);
+  color:var(--mainWhite);
+}
+.themeLight{
+  background-color: var(--mainWhite);
+}
