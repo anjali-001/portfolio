@@ -13,10 +13,11 @@ function Projects() {
   return (
     <div>
       <Navheader />
-      <div className="container">
-          <div className="row mt-3">
+      <div className={darkMode?"themeDark ":"themeLight "}>
+          <div  className="container">
+          <div className="row pt-3">
               
-        <Card inverse className=" col-md-4">
+        <Card inverse className={darkMode?"projectcardbg col-md-4 projecthover":" col-md-4 projecthover"}>
         <a href="https://qbingo-19.web.app/" target="_blank">   
           <CardImg
             className="project-card"
@@ -27,9 +28,7 @@ function Projects() {
           <CardImgOverlay>
             <CardTitle className="project-title">qBingo</CardTitle>
             <CardText className="project-detail">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+              This is a fun little housie project that I build with ReactJS as a part of a challenge. Hosted on firebase. Give it a try if you will.
             </CardText>
             <CardText>
               <small className="text-muted">Go to the website</small>
@@ -38,7 +37,7 @@ function Projects() {
           </a>
         </Card>
        
-        <Card inverse className=" col-md-4">
+        <Card inverse className={darkMode?"projectcardbg col-md-4 projecthover":" col-md-4 projecthover"}>
         <a href="https://downnine.netlify.app/" target="_blank"> 
           <CardImg
           className="project-card"
@@ -59,8 +58,8 @@ function Projects() {
           </CardImgOverlay>
           </a>
         </Card>
-        <Card inverse className=" col-md-4">
-        <a href="https://qbingo-19.web.app/" target="_blank"> 
+        <Card inverse className={darkMode?"projectcardbg col-md-4 projecthover":" col-md-4 projecthover"}>
+        <a href="https://beach-resort19.web.app/" target="_blank"> 
           <CardImg
           className="project-card"
             width="30%"
@@ -80,7 +79,7 @@ function Projects() {
           </CardImgOverlay>
           </a>
         </Card>
-        <Card inverse className=" col-md-4 ">
+        <Card inverse className={darkMode?"projectcardbg col-md-4 projecthover":" col-md-4 projecthover"}>
         <a href="https://react-phone-store19.netlify.app/" target="_blank"> 
           <CardImg
           className="project-card"
@@ -102,6 +101,7 @@ function Projects() {
           </a>
         </Card>
         </div>
+      </div>
       </div>
       
     </div>

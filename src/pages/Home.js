@@ -29,7 +29,7 @@ function Home() {
                     <p className={darkMode?"button-dark":"button"}>Resume</p>
                 </div>
                 <div className="information">
-                <p className="info">ECE undergrad, Heritage Institute of Technology; web developer(MERN Stack) and content writer. Trying to  find that balance between technical and artistic creativity (Just FYI, find the red dot for the non-tech side).</p>
+                <p className="info">ECE undergrad, Heritage Institute of Technology; web developer(MERN Stack) and content writer. I code (read break code). Trying to  find that balance between technical and artistic creativity.</p>
                 </div>
                 </div>
                 <div className={darkMode?"foot-dark":"foot"}>

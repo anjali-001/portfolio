@@ -87,9 +87,9 @@ body{
 .project-card{
   filter: brightness(50%);
 }
-.project-card :hover{
-  filter: blur(2px) brightness(60%);
-}
+/* .project-card:hover{
+  filter: blur(2px)!important;
+} */
 .project-title{
   font-size: 30px;
   font-weight: 100;
@@ -102,4 +102,12 @@ body{
   font-weight: 100;
   font-family: 'Times New Roman', Times, serif;
   color: var(--mainWhite);
+}
+.projecthover{
+  border: none !important;
+}
+.projecthover:hover{
+  transform: scale(1.02);
+}.projectcardbg{
+  background-color: var(--mainDark) !important;
 }
