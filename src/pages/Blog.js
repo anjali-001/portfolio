@@ -29,9 +29,11 @@ function Blog() {
               className="img-fluid blog-img blog-img"
             />
             <CardBody className={darkMode ? "themeDark" : "themeLight"}>
-              <CardTitle style={{ fontSize: "30px" }}>
+              <a className="blog-title" href="https://medium.com/@anjalisingh_421/button-gradient-1349292b52fe?source=friends_link&sk=b4c0c5ba329db87eec0b367f02bd8227" target="_blank">
+              <CardTitle>
                 Button Gradient
               </CardTitle>
+              </a>
               <CardText>
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -65,7 +67,7 @@ function Blog() {
             </div>
           </Card>
           <br/>
-          <Card className="blog">
+          {/* <Card className="blog">
             <CardImg
               top
               width="auto"
@@ -86,7 +88,7 @@ function Blog() {
             <div className="overlay">
               <h1 className="blog-hover">Read more</h1>
             </div>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </div>

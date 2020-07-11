@@ -49,6 +49,15 @@ body{
 .blog:hover .overlay{
   opacity: 1;
 }
+.blog-title{
+  font-size: 30px;
+  color:white;
+  cursor:pointer;
+}
+.blog-title:hover{
+  color: gray;
+  text-decoration:none !important ;
+}
 @media(max-width:768px)
 {
   .blog-hover{
